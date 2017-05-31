@@ -1,10 +1,10 @@
 ﻿(function() {
- 
+
 	psychometrick = new ROCK.Psychometrick();
 
 	var
 	moods = [
-		"MERRY",
+		"JOLLY",
 		"CRANKY",
 		"CONTENT",
 		"BUBBLY",
@@ -25,20 +25,20 @@
 		"MIFFED",
 		"SAD",
 		"CALM",
-		"CRAPPY",
+		"RUBBISH",
 		"CHEERFUL",
-		"CHILLED",
+		"RELAXED",
 		"CHIRPY",
 		"THRILLED",
 		"CAREFREE"
 	],
 	target = moods,
 	loop = target.length;
-	
-	// console.log(loop);
 
 	while(loop--) {
+
 		psychometrick.words.append(new ROCK.Psychometrick.Word(target[loop]));
+
 	};
 
 })();
